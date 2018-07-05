@@ -1,7 +1,11 @@
 .title {
     width: 100%;
     text-align: center;
-    padding: 20;
-    color: aquamarine;
+    padding: 20px;
+    color: rgb(126, 124, 124);
     background-color: aliceblue;
+}
+
+.title > h1 {
+    color: black;
 }

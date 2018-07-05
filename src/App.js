@@ -17,7 +17,12 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>So many dogs!</Title>
+        <main>
+        <Title><h1>So many dogs, pet(click) a pooch!</h1>
+          <h2>High Score : 
+          <br />
+          Current Score :</h2>
+        </Title>
         {this.state.dogs.map(dog => (
         <DogCard
         image={dog.image}
@@ -25,6 +30,7 @@ class App extends Component {
         wasClicked={dog.wasClicked}
         />
         ))}
+        </main>
       </Wrapper>
     );
   }

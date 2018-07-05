@@ -9,7 +9,7 @@ class DogCard extends React.Component {
         return (
             <div className="card">
             <div className="img-container">
-            <img src={image} />
+            <img alt={id} src={image} />
            {/* } <id={id} />
             <wasClicked={wasClicked} /> */}
             </div>
@@ -20,7 +20,7 @@ class DogCard extends React.Component {
 
 
 DogCard.propTypes = {
-    id: PropTypes.number,
+    id: PropTypes.string,
     image: PropTypes.string,
     wasClicked: PropTypes.bool
 }
