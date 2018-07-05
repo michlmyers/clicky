@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 2,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 3,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 4,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 5,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 6,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 7,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 8,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 9,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 10,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 11,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    },
+    {
+        "id": 12,
+        "image": "./assets/images/rottweiler.jpg",
+        "wasClicked": false
+    }
+]
