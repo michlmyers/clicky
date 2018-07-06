@@ -18,10 +18,12 @@ class App extends Component {
     return (
       <Wrapper>
         <main>
-        <Title><h1>So many dogs, pet(click) a pooch!</h1>
-          <h2>High Score : 
+        <Title><h1>Pet a pooch!</h1>
+        <h3>Click a pic to pet a pooch. Only pet a dog
+          once to increase your score!</h3>
+          <h4>High Score : 
           <br />
-          Current Score :</h2>
+          Current Score :</h4>
         </Title>
         {this.state.dogs.map(dog => (
         <DogCard

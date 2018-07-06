@@ -3,9 +3,36 @@
     text-align: center;
     padding: 20px;
     color: rgb(126, 124, 124);
-    background-color: aliceblue;
+    background-image: url(bone.jpg);
 }
 
 .title > h1 {
-    color: black;
+    color: rgb(75, 72, 72);
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow:     1px 0px 1px #ccc, 0px 1px 1px #ccc, 
+    2px 1px 1px #ccc, 1px 2px 1px #ccc,
+    3px 2px 1px #ccc, 2px 3px 1px #ccc,
+    4px 3px 1px #ccc, 3px 4px 1px #ccc,
+    5px 4px 1px #ccc, 4px 5px 1px #ccc,
+    6px 5px 1px #ccc, 5px 6px 1px #ccc,
+    7px 6px 1px #ccc;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.title > h3 {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(75, 72, 72);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.title > h4 {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(75, 72, 72);
+    border: 1px solid black;
+    padding: 5px;
 }

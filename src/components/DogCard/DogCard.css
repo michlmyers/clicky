@@ -1,15 +1,17 @@
 .card {
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     border-radius: 1px;
-    width: 22%;
+    width: 190px;
     padding: 5px;
     margin: 10px;
-    background: #5d819b;
+    /* background: #5d819b; */
+    background: rgb(152, 189, 182);
 }
 
 .card > .img-container {
     text-align: center;
     padding: 5px;
+    height: 90%;
   }
 
   .card > .img-container > img {
