@@ -2,27 +2,36 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './DogCard.css';
 
+{/*}
 class DogCard extends React.Component {
     render() {
-        {/* need to set up a click event handler for wasClicked set to id*/}
         const { id, image, wasClicked } = this.props
         return (
-            <div className="card">
+            <div onClick={() => props.dogClick(props.id) } className="card">
             <div className="img-container">
-            <img alt={id} src={image} />
-           {/* } <id={id} />
-            <wasClicked={wasClicked} /> */}
+            <img alt={props.id} src={props.image} />
+            <id {...id} />
+            <wasClicked {...wasClicked} />
             </div>
             </div>
         );
     }
-}
+} */}
 
+const DogCard = props => (
+    <div onClick={() => props.dogClick(props.id) } className="card">
+    <div className="img-container">
+    <img alt={props.id} src={props.image} />
+    </div>
+    </div>
+);
 
+{/*
 DogCard.propTypes = {
-    id: PropTypes.string,
+    id: PropTypes.number,
     image: PropTypes.string,
     wasClicked: PropTypes.bool
 }
+*/}
 
 export default DogCard;

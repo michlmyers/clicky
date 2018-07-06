@@ -5,14 +5,33 @@ import DogCard from './components/DogCard';
 import Wrapper from './components/Wrapper';
 import Title from './components/Title';
 
+let highScore = 0;
+let currentScore = 0;
+
 class App extends Component {
 
   constructor(props) {
     super(props);
+    
     this.state = {
-      dogs
+      dogs,
+      highScore,
+      currentScore
     };
   }
+
+  dogClick = id => {
+
+    const dogs = this.state.dogs;
+    const dogClick = dogs.filter(dog => dog.id === id);
+
+    console.log('click worked and current score is' + currentScore);
+    console.log('and highscore is' + highScore);
+    dogs.sort(function(a, b){return 0.5 - Math.random()});
+    this.setState({ dogs });
+
+  }
+
 
   render() {
     return (
@@ -21,15 +40,17 @@ class App extends Component {
         <Title><h1>Pet a pooch!</h1>
         <h3>Click a pic to pet a pooch. Only pet a dog
           once to increase your score!</h3>
-          <h4>High Score : 
+          <h4>High Score : {this.state.highScore}
           <br />
-          Current Score :</h4>
+          Current Score : {this.state.currentScore} 
+          </h4>
         </Title>
         {this.state.dogs.map(dog => (
         <DogCard
         image={dog.image}
         id={dog.id}
-        wasClicked={dog.wasClicked}
+        key={dog.id}
+        dogClick={this.dogClick}
         />
         ))}
         </main>
