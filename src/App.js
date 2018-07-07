@@ -27,6 +27,7 @@ class App extends Component {
     const dogs = this.state.dogs;
     const dogClick = dogs.filter(dog => dog.id === id);
 
+    // if dog pic was already clicked
     if (dogClick[0].wasClicked) {
       currentScore = 0;
       alertMsg = `You already pet them, you've been bitten. Try again!`;
@@ -36,7 +37,9 @@ class App extends Component {
       this.setState({ currentScore });
       this.setState({ dogs });
       this.setState({ alertMsg });
-    } else if (currentScore < 12) {
+    }
+    // if pic was not clicked
+    else if (currentScore < 12) {
       dogClick[0].wasClicked = true;
       currentScore++;
       alertMsg = 'Good human. Pet another dog!';
@@ -49,9 +52,10 @@ class App extends Component {
       this.setState({ currentScore });
       this.setState({ dogs });
       this.setState({ alertMsg });
+    } else {
+      console.log('someting');
     };
   }
-
 
   render() {
     return (
